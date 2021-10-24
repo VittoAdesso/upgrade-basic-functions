@@ -17,7 +17,7 @@ const duplicates = [
 
 
 const removeDuplicates = duplicates.reduce(function(acumulado, actual) {
-    if (acumulado.indexOf(actual) === -1) {
+    if (acumulado.indexOf(actual) === -1) { /* -1 if not found. */
         /* si en el acumulado te encuentras un string igual, elimina, el reesto empuja al nuevo array  */
         acumulado.push(actual);
     }
